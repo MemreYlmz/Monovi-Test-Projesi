@@ -1,0 +1,17 @@
+﻿@model TblPersonal
+<link rel="stylesheet" href="~/css/AddPersonal.css" asp-append-version="true" />
+
+<div class="add-to-person">
+    <form action="" method="post">
+        <h1>Add to new person</h1>
+        <input asp-for="PersonalNumber" type="text" placeholder="Enter Person id" class="txt">
+        <input asp-for="Name" type="text" placeholder="Enter Name" class="txt">
+        <input asp-for="Surname" type="text" placeholder="Enter Surname" class="txt">
+        <input asp-for="Mail" type="mail" placeholder="Enter mail" class="txt">
+        <input asp-for="PhoneNumber" type="number" placeholder="Enter Phone number" class="txt">
+        <input asp-for="Title" type="text" placeholder="Enter title" class="txt">
+        <input type="submit" placeholder="Create person" class="add-btn">
+    </form>
+
+
+</div>

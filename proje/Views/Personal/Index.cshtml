@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    
+}
+@model List<TblPersonal> 
+
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Personal Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Mail</th>
+            <th scope="col">Title</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach(var i in Model)
+        {
+             <tr>
+                <th scope="row">@i.PersonalNumber</th>
+                <td>@i.Name</td>
+                <td>@i.Surname</td>
+                <td>@i.PhoneNumber</td>
+                <td>@i.Mail</td>
+                <td>@i.Title</td>
+                <td><button onclick="window.location.href = '/Personal/Edit/@i.Id'; " class="btn"><i class="fa fa-pencil"></i></button></td>
+                <td><button onclick="window.location.href = '/Personal/Delete/@i.Id'; " class="btn"><i class="fa fa-trash"></i></button></td>
+            </tr>
+        }
+    </tbody>
+</table>
