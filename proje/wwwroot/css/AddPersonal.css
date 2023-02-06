@@ -1,8 +1,10 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-image: url("/image/AddPersonalBackground.gif");
+    background-size:cover;
 }
+
 
 .add-to-person {
     width: 300px;
@@ -13,6 +15,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
+    
 }
 
     .add-to-person h1 {
@@ -29,6 +32,8 @@
         text-align: center;
         box-sizing: border-box;
         border: none;
+        
+        
     }
 
 .txt {
